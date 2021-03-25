@@ -3,6 +3,34 @@
 	<head>
 		<title>Demo app</title>
 		<link rel="stylesheet" type="text/css" href="/demo-app/css/main.css">
+
+		<!-- RUM tracker snippet -->
+	    	<script>
+		    (function (n, i, a, v, s, c, x, z) {
+			x = window.AwsNexusTelemetry = { q: [], n, i, a, v, c };
+			window[n] = function (c, p) {
+			    x.q.push({ c, p });
+			};
+			z = document.createElement('script');
+			z.async = true;
+			z.src = s;
+			document.head.insertBefore(
+			    z,
+			    document.getElementsByTagName('script')[0]
+			);
+		    })(
+			'nexus',
+			'24f6da41-3def-4a5f-bebb-53892da4a333',
+			'rbhogi-github',
+			'1.0.0',
+			'https://dbq1zc0vj7pzk.cloudfront.net/assets/rum-javascript-telemetry.js',
+			{
+			    identityPoolId: 'us-west-2:6f4250d8-e158-4b78-a773-9043758261a3',
+			    endpoint: 'http://Nexus-Servi-SWGT0RFDSEWS-ab52d4218a5cb7c6.elb.us-west-2.amazonaws.com/'
+			}
+		    );
+		</script>
+
 	</head>
 	<body>
 		<nav>
@@ -15,8 +43,8 @@
 		<div class="container">
     		<div class="blurb">
         		<h1>Hello world</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+    		</div>
+		</div>
 		<footer>
     		<ul>
         		<li><a href="mailto:patric.k.sun692@gmail.com">email</a></li>
