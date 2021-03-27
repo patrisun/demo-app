@@ -1,1 +1,26 @@
+<script>
+		    (function (n, i, a, v, s, c, x, z) {
+			x = window.AwsNexusTelemetry = { q: [], n, i, a, v, c };
+			window[n] = function (c, p) {
+			    x.q.push({ c, p });
+			};
+			z = document.createElement('script');
+			z.async = true;
+			z.src = s;
+			document.head.insertBefore(
+			    z,
+			    document.getElementsByTagName('script')[0]
+			);
+		    })(
+			'nexus',
+			'c6147158-9095-4edb-9b14-abfde541ea33',
+			'patrisun-demo-app',
+			'1.0.0',
+			'https://dbq1zc0vj7pzk.cloudfront.net/assets/rum-javascript-telemetry.js',
+			{
+			    identityPoolId: 'us-west-2:26390953-3343-48af-95a8-bf8515851699',
+			    endpoint: 'https://dataplane.us-west-2.beta.rum.aws.dev'
+			}
+		    );
+		</script>
 blog page
