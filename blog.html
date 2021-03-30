@@ -5,6 +5,31 @@
 		<link rel="stylesheet" type="text/css" href="/demo-app/css/main.css">
 
 		<!-- RUM tracker snippet -->
+		<script>
+		    (function (n, i, a, v, s, c, x, z) {
+			x = window.AwsNexusTelemetry = { q: [], n, i, a, v, c };
+			window[n] = function (c, p) {
+			    x.q.push({ c, p });
+			};
+			z = document.createElement('script');
+			z.async = true;
+			z.src = s;
+			document.head.insertBefore(
+			    z,
+			    document.getElementsByTagName('script')[0]
+			);
+		    })(
+			'nexus',
+			'6174d949-f3c2-49e8-85fe-b36bc3b3d226',
+			'patrisun-github-demo-2',
+			'1.0.0',
+			'https://dbq1zc0vj7pzk.cloudfront.net/assets/rum-javascript-telemetry.js',
+			{
+			    identityPoolId: 'us-west-2:419e9c44-444a-482f-b407-5cdc1a82f03b',
+			    endpoint: 'https://dataplane.us-west-2.beta.rum.aws.dev'
+			}
+		    );
+		</script>
 	</head>
 	<body>
 		<nav>
