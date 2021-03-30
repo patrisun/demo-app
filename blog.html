@@ -4,7 +4,31 @@
 		<title>Demo app</title>
 		<link rel="stylesheet" type="text/css" href="/demo-app/css/main.css">
 
-		<!-- RUM tracker snippet -->
+<script>
+    (function (n, i, a, v, s, c, x, z) {
+        x = window.AwsNexusTelemetry = { q: [], n, i, a, v, c };
+        window[n] = function (c, p) {
+            x.q.push({ c, p });
+        };
+        z = document.createElement('script');
+        z.async = true;
+        z.src = s;
+        document.head.insertBefore(
+            z,
+            document.getElementsByTagName('script')[0]
+        );
+    })(
+        'nexus',
+        'fbc71acd-72b3-406f-962a-17ed32d7ebbe',
+        'patrisun-github-demo',
+        '1.0.0',
+        'https://dbq1zc0vj7pzk.cloudfront.net/assets/rum-javascript-telemetry.js',
+        {
+            identityPoolId: 'us-west-2:d19166e6-501d-42d5-bbb2-f494a0a015b5',
+            endpoint: 'https://dataplane.us-west-2.beta.rum.aws.dev'
+        }
+    );
+</script>
 	</head>
 	<body>
 		<nav>
@@ -16,7 +40,7 @@
 		</nav>
 		<div class="container">
     		<div class="blurb">
-        		<h1>Blog page</h1>
+        		<h1>Blog page!</h1>
     		</div>
 		</div>
 		<footer>
